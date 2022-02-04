@@ -355,3 +355,18 @@ section {
     }
   }
 }
+
+@keyframes wifiAnim {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.wifi-icon {
+  font-size: 2rem;
+  color: #f9af2e;
+  animation: wifiAnim 1s infinite alternate;
+}
