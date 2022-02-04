@@ -283,4 +283,19 @@ section.page-block:nth-child(odd) {
   animation: wifiAnim 1s infinite alternate;
 }
 
+.wifi-password {
+  font-size: 1.2rem;
+}
+.wifi-password span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #098536;
+  color: #ffffff;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.wifi-password span i {
+  margin-left: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
