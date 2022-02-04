@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,32 +10,47 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <title>Sandy Starfish Welcome Guide</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--Icon Font-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
 </head>
+
 <body>
 <div class="page-wrapper">
     <aside class="menu-area">
         <div class="container">
+            <div class="menu-close">
+                <i class="fa fa-times"></i>
+            </div>
             <div class="row">
                 <div class="col">
                     <nav class="main-nav">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Short Info</a></li>
-                            <li><a href="">Address & Directions</a></li>
-                            <li><a href="">Parking</a></li>
-                            <li><a href="">Access to the Unit</a></li>
-                            <li><a href="">Check-In: (3:30pm)</a></li>
-                            <li><a href="">Check Out: (10:00am)</a></li>
-                            <li><a href="">Important Phone Numbers:</a></li>
-                            <li><a href="">Internet Access</a></li>
-                            <li><a href="">Cab Service:</a></li>
-                            <li><a href="">Fun & Recreational Activities</a></li>
-                            <li><a href="">Online Phone Directory</a></li>
-                            <li><a href="">Bottled Water replacement delivery</a></li>
-                            <li><a href="">Toiletries and consumables:</a></li>
-                            <li><a href="">Pool and Laundry Room:</a></li>
-                            <li><a href="">Location of Garbage</a></li>
-                            <li><a href="">EMERGENCY SERVICES PHONE NUMBERS:</a></li>
+                            <li page-rel="home"><a href="#home">Home</a></li>
+                            <li page-rel="sandy-starfish"><a href="#sandy-starfish">Sandy Starfish</a></li>
+                            <li page-rel="address-directions"><a href="#address-directions">Address & Directions</a></li>
+                            <li page-rel="parking"><a href="#parking">Parking</a></li>
+                            <li page-rel="access-unit"><a href="#access-unit">Access to the Unit</a></li>
+                            <li page-rel="note"><a href="#note">**NOTE**</a></li>
+                            <li page-rel="check-in"><a href="#check-in">Check-In (3:30pm)</a></li>
+                            <li page-rel="check-out"><a href="#check-out">Check Out (10:00am)</a></li>
+                            <li page-rel="important-phone-numbers"><a href="#important-phone-numbers">Important Phone Numbers</a></li>
+                            <li page-rel="internet-access"><a href="#internet-access">Internet Access</a></li>
+                            <li page-rel="cab-service"><a href="#cab-service">Cab Service:</a></li>
+                            <li page-rel="fun-recreational-activities"><a href="#fun-recreational-activities">Fun & Recreational Activities</a></li>
+                            <li page-rel="online-phone-directory"><a href="#online-phone-directory">Online Phone Directory</a></li>
+                            <li page-rel="bottled-water-replacement-delivery"><a href="#bottled-water-replacement-delivery">Bottled Water replacement delivery</a>
+                            </li>
+                            <li page-rel="toiletries-consumables"><a href="#toiletries-consumables">Toiletries and consumables</a></li>
+                            <li page-rel="pool-laundry"><a href="#pool-laundry">Pool and Laundry Room</a></li>
+                            <li page-rel="location-garbage"><a href="#location-garbage">Location of Garbage</a></li>
+                            <li page-rel="emmargency-phone"><a href="#emmargency-phone">Emergency Services Phone Numbers</a></li>
+
                         </ul>
                     </nav>
                 </div>
@@ -51,11 +67,9 @@
         </div>
         <!--row-->
         <div class="container">
-
-
             <div class="row align-items-center">
-                <div class="col-6 logo">
-                    <a href=""><img src="images/tangerine-sunsets-logo.png" alt=""></a>
+                <div class="col-6">
+                    <a class="logo" href="#home"><img src="images/tangerine-sunsets-logo.png" alt=""></a>
                 </div>
                 <div class="col-6">
                     <div class="mobile-menu-btn">
@@ -67,7 +81,7 @@
         </div>
         <!-- container-->
     </header>
-    <section class="main-banner">
+    <section class="main-banner" id="home">
         <div class="container">
             <div class="">
                 <div class="row align-items-center banner-content">
@@ -80,63 +94,504 @@
         </div>
         <div class="banner-bottom">
             <div class="container">
-
                 <div class="row align-items-center">
                     <div class="col">
                         <ul>
-                            <li>Email: <a href="">info@tangerinesunsets.com</a></li>
-                            <li>Guest Services: <a href="">242-676-7223</a></li>
-                            <li>Emergency Services: <a href="">242-225-3351</a></li>
+                            <li><i class="fa fa-envelope-open-text"></i> Email: <a href="">info@tangerinesunsets.com</a>
+                            </li>
+                            <li><i class="fa fa-phone-alt"></i> Guest Services: <a href="">242-676-7223</a></li>
+                            <li><i class="fa fa-phone-alt"></i> Emergency Services: <a href="">242-225-3351</a></li>
                         </ul>
                     </div>
                 </div>
 
-            </div> <!--container-->
+            </div>
+            <!--container-->
         </div>
         <!--banner-bottom-->
     </section>
-    <section class="page-block">
+    <section class="page-block" id="sandy-starfish">
         <div class="container">
-            <div class="row min-vh-100 align-items-center">
+            <div class="row min-vh-100 py-5 align-items-md-center">
                 <div class="col">
-                    <h2 class="section-title">Sandy Starfish</h2>
+                    <h2 class="section-title text-center">Sandy Starfish</h2>
+                    <div class="table-responsive">
+                        <!-- table section start -->
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                            <tr>
+                                <td>Property ID</td>
+                                <td>TS027-WIN-WR</td>
+                            </tr>
+                            <tr>
+                                <td>Property Name</td>
+                                <td>Sandy Starfish</td>
+                            </tr>
+                            <tr>
+                                <td>Unit #</td>
+                                <td>#2</td>
+                            </tr>
+                            <tr>
+                                <td>Street Address</td>
+                                <td colspan="2">Compass Point Studio
+                                    Drive, West Bay Street
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1
+                                    st time Gate Access
+                                </td>
+                                <td>The parking spot for
+                                    this unit is just to the
+                                    left of the building’s
+                                    entrance, opposite the
+                                    main parking lot.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Unit Local Phone #</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Unit Intl. Phone #
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Wireless Name</td>
+                                <td>Sandy Starfish</td>
+                            </tr>
+                            <tr>
+                                <td>Wireless Password</td>
+                                <td>tangerine</td>
+                            </tr>
+                            <tr>
+                                <td>Gate Access</td>
+                                <td>Enter this gate to
+                                    access your unit.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- table section end -->
+
+                    </div>
+                    <p class="mt-4 text-center">Welcome and thank you for choosing Tangerine Sunsets. We are delighted
+                        to have you
+                        as our
+                        guest and want
+                        to ensure you have a wonderful time while here in The Bahamas. Here is a quick guide to
+                        important
+                        information during your stay. Please Print and bring this with you:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Address & Directions section -->
+    <section class="page-block" id="address-directions">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/location.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
                     <div>
-                        <ul>
-                            <li>Property ID: TS027-WIN-WR</li>
-                            <li>Property Name: Sandy Starfish</li>
-                            <li>Unit : #2</li>
-                            <li>Street Address: Compass Point Studio
-                                Drive, West Bay Street
-                            </li>
-                            <li>1st time Gate Access:
-                                The parking spot for
-                                this unit is just to the
-                                left of the building’s
-                                entrance, opposite the
-                                main parking lot.
-                            </li>
-                            <li>Unit Local Phone :</li>
-                            <li>Unit Intl. Phone :</li>
-                            <li>Wireless Name: Sandy Starfish</li>
-                            <li>Wireless Password: tangerine</li>
-                            <li>Gate Access:
-                                Enter this gate to
-                                access your unit.
-                            </li>
-                        </ul>
-                        <p>Welcome and thank you for choosing Tangerine Sunsets. We are delighted to have you as our
-                            guest and want
-                            to ensure you have a wonderful time while here in The Bahamas. Here is a quick guide to
-                            important
-                            information during your stay. Please Print and bring this with you:</p>
+                        <h2 class="section-title text-start">Address & Directions</h2>
+                        <p>Street Name: West Bay St, next to Compass Point Studio – This is the street between
+                            Dino’s Conch Stand and Studio Café. [ Bldg name: Tip Top Condo #6] - Property Name: Sandy
+                            Starfish Unit # 6</p>
+                        <p> Heading west on West Bay St toward Compass Point Studio. Take first left after Dino's
+                            Conch Stand, and drive
+                            up the hill to Tip Top Condo. Unit is #6. This building is just before Compass Point
+                            Studio.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Address & Directions section -->
+    <section class="page-block" id="parking">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/parking.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title">Parking</h2>
+                    <p>Park in the driveway on the right – directly in front of the small pedestrian gate. The
+                        parking spot on the left is reserved for another tenant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Parking section -->
+    <section class="page-block" id="access-unit">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/access.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Access to the Unit</h2>
+                        <p>There is an electronic lock at the front door. To enter the unit, simply enter your door
+                            and turn the knob on the
+                            digital lock. This code was emailed to you when you booked in an email called “ Door
+                            Code & Guide”. When leaving
+                            the unit, close the door, press the “Schlage” button and turn the knob on the digital
+                            lock to lock the door. Your
+                            security code will only be valid during your stay and will automatically expire on the
+                            day & time of your check out.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Access to the Unit section -->
+    <section class="page-block" id="note">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col">
+                    <h2 class="section-title">**NOTE**</h2>
+                    <div>
+                        <p>Unless you have prearranged and paid for early check-in service, you will not have access
+                            to the
+                            unit before 3:30pm, which is our standard check-in time. If you happen to arrive before
+                            this time you will NOT
+                            have access to the unit.
+
+                        </p>
+                        <p>The same rule applies to check-out times. Unless you have prearranged and paid for late
+                            check-out service,
+                            check out time will be 10:00am. To avoid any inconveniences, please observe the above
+                            information and
+                            make appropriate arrangements for your stay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NOTE section -->
+    <section class="page-block" id="check-in">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/check-in.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div>
+                        <h2 class="section-title">Check-In: (3:30pm)</h2>
+                        <p>Please confirm by email if you would like an airport pickup service and we can arrange
+                            transportation from the
+                            airport (fees paid directly to driver) who will be holding a welcome sign with your name.
+                            Must be arranged at
+                            least 48 hours before Check-In date.
+                        </p>
+                        <p>You should anticipate a wait time of one hour between landing, clearing customs and driving
+                            to the villas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Check-In section -->
+    <section class="page-block" id="check-out">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/check-out.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Check Out: (10:00am)</h2>
+                        <p>Please confirm by email if you would like an airport drop off service and we can arrange
+                            transportation to the
+                            airport (fees paid directly to driver). This service must be confirmed 48 hours before
+                            check-out. The agent will
+                            meet you on property 15 minutes before check-out to receive the keys and to ensure the unit
+                            is locked when
+                            you leave.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Check-Out section -->
+
+    <section class="page-block" id="important-phone-numbers">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/important-numbers.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Important Phone Numbers</h2>
+                        <ul>
+                            <li>242-676-7223 / 954-399-0256 (Tangerine Sunsets Office)</li>
+                            <li> 242-225-3351 / 954-234-2222 <b>(Duran Price – Home Owner)</b></li>
+                            <li>242-813-0837- Bert Marshall / 242-433-0999 - Geralle Gabriel – Transportation Services
+                            </li>
+                            <li> Email requests should be sent to info@tangerinesunsets.com</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Important Phone Numbers section -->
+
+    <section class="page-block" id="internet-access">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/wifi.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div>
+                        <h2 class="section-title">Internet Access</h2>
+                        <p>Free WiFi Internet access is provided to all guests. The WiFi network name and password are
+                            located at the <a href="#home">top of this document.</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Internet Access section -->
+
+    <section class="page-block" id="cab-service">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/cab-service.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Cab Service</h2>
+                        <p>If you require transportation services during your stay, please feel free to contact Bert
+                            Marshall 242-813-0837,Geralle Gabriel 242-433-0999 - or as an alternative, the local cab
+                            service company at 242-323-5111 to arrange transportation. Airport cabs providing airport
+                            drop off and pickup services would need to be booked in advance, but standard cab services
+                            are always available.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cab Service section -->
+
+    <section class="page-block" id="fun-recreational-activities">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/fun-recreation.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <h2 class="section-title">Fun & Recreational Activities</h2>
+                    <div>
+                        <p>For all your fun and recreational activity needs and reservations, please feel free to
+                            contact us to arrange
+                            everything from tours and excursions, visits to Atlantis, to dinner reservations and
+                            swimming with the
+                            dolphins! info@tangerinesunsets.com </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fun & Recreational Activities section -->
+    <section class="page-block" id="online-phone-directory">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/phone-derictory.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Online Phone Directory</h2>
+                        <p>Looking for the nearest Domino’s Pizza for delivery? Find any type of service company in the
+                            yellow pages or
+                            white pages national telephone listings online at <b>www.btcbahamas.com</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Online Phone Directory section-->
+
+    <section class="page-block" id="bottled-water-replacement-delivery">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/replacement-delivery.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Bottled Water replacement delivery</h2>
+                        <p>We provide complimentary purified drinking water in 5-gallon bottles and refills as needed.
+                            If you have an
+                            empty bottle and require a refill, please email us at info@tangerinesunsets.com or phone:
+                            242-676-7223 and
+                            we’ll be happy to arrange next day delivery (Thur-Sun). If you don’t plan to be in the unit
+                            at the time of
+                            delivery, please leave the 5-gallon bottle on the outside of the unit so it can be replaced.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bottled Water replacement delivery section -->
+
+    <section class="page-block" id="toiletries-consumables">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/toiletries.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+
+                    <div>
+                        <h2 class="section-title">Toiletries and consumables</h2>
+                        <p>We provide a complimentary starter pack of toiletries, paper towels, soap, hand soap,
+                            dishwashing liquid and
+                            garbage bags. Guests are responsible for replenishing these for their personal use if needed
+                            during your stay.
+                        </p>
+                        <p>However, you are not required to replace these on check-out.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Toiletries and consumables section -->
+
+    <section class="page-block" id="pool-laundry">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/pool.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <h2 class="section-title">Pool and Laundry Room</h2>
+                    <div>
+                        <p>The pool and gazebo are just in front of the unit. The laundry room is at the rear of the
+                            property. The code for
+                            the laundry room door is “2425 – ON”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pool and Laundry Room section -->
+
+    <section class="page-block" id="location-garbage">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/trash.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Location of Garbage</h2>
+                        <p>Main trash bin area is at the bottom of the hill on the left as you leave the property. It is
+                            located along the road between the main property and the main west bay street. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Location of Garbage section -->
+    <!-- EMERGENCY SERVICES PHONE NUMBERS section -->
+    <section class="page-block" id="emmargency-phone">
+        <div class="container">
+            <div class="row min-vh-100 py-5 align-items-md-center">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="images/phone-derictory.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h2 class="section-title">Emergency Services Phone Numbers</h2>
+                        <ul>
+                            <li>Police/Fire - 911 or 242-394-4540 or 242-394-4541)</li>
+                            <li> Medical Emergencies: 242-302-4600 (Doctor’s Hospital – private) or 242-322-2861
+                                (Princess
+                                Margaret Hospital – Public)
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EMERGENCY SERVICES PHONE NUMBERS section -->
+    <!-- footer section -->
+    <section class="page-block">
+        <div class="container">
+
+            <div class="row min-vh-100 py-5 align-items-lg-center">
+                <div class="col text-center">
+                    <img src="images/tangerine-sunsets-logo.png" alt="" srcset="">
+                    <div class="mt-3">
+                        <p>US: 954.399.0256 | BAH: 242.676.7223</p>
+                        <p>info@tangerinesunsets.com</p>
+                        <p>Emergency / After Hours – 954-234-2222 / 242-225-3351</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <div class="back-to-top"><i class="fas fa-chevron-up"></i></div>
 </div>
 <!--page-wrapper-->
 <script src="js/jquery.min.js"></script>
 <script src="js/custom-script.js"></script>
 </body>
+
 </html>
